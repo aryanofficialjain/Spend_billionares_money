@@ -13,6 +13,21 @@
     {
         "name": "Graff Pink Diamond",
         "price": 40400000,
+        "img": "../img/3.jpeg"
+    },
+    {
+        "name": "Golden Cell Phone",
+        "price": 40000000000,
+        "img": "../img/4.jpeg"
+    },
+    {
+        "name": "Luxuary Yatch",
+        "price": 100000400000,
         "img": "../img/5.jpeg"
+    },
+    {
+        "name": "Private Jet",
+        "price": 50000000000,
+        "img": "../img/6.jpeg"
     }
 ]

@@ -11,20 +11,21 @@ const Things = ({ asset, total }) => {
 
   return (
     <>
-    <div className='p-3 mt-8 flex items-center justify-evenly flex-wrap text-center '>
-      {asset.map((item, index) => (
-        <div key={index} className='bg-black text-white p-4 rounded'>
-          <img src={item.img} width="300px" height="300px" alt="" />
-          <h3>{item.name}</h3>
-          <p>{item.price}</p>
-          <button className='bg-white text-black py-2 px-3 rounded mt-3' onClick={() => handleAddToCart(item.name, item.price)}>Buy This</button>
-          
-        </div>
-      ))}
+        <div className=' p-2 mt-8 flex flex-col md:flex-row items-center justify-evenly flex-wrap text-center'>
+          {asset.map((item, index) => (
+            <div key={index} className='bg-black text-white p-4 m-4 rounded'>
+              <img src={item.img} width="300px" height="300px" alt="" />
+              <h3>{item.name}</h3>
+              <p>{item.price}</p>
+              <button className='bg-white text-black py-2 px-3 rounded mt-3' onClick={() => handleAddToCart(item.name, item.price)}>Buy This</button>
+            </div>
 
-    </div>
+))}
 
-    </>      
+
+      </div>
+
+    </>
   );
 };
 
